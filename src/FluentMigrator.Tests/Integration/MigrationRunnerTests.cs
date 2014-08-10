@@ -1282,7 +1282,7 @@ namespace FluentMigrator.Tests.Integration
     {
         public override void Up()
         {
-            Insert.IntoTable("TestTable2").Row(new {Id = 1, TestTableId = 1});
+            Insert.IntoTable("TestTable2").Row(new { TestTableId = 1 });
             Rename.Table("TestTable2").To("TestTable'3");
         }
     }
